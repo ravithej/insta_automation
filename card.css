@@ -1,0 +1,16 @@
+.fas:hover, .fab:hover{
+    color: blue;
+}
+.fas:active, .fab:active {
+  color: green;
+  transform: translateY(4px);
+
+}
+.righticons {
+        display: inline-block;
+        float: right;
+    }
+ .lefticons {
+        display: inline-block;
+        float: left;
+    }

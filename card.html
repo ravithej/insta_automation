@@ -1,0 +1,36 @@
+<div class="card text-center w-75 {{darkTheme.bgtheme}} {{darkTheme.font}} mx-auto" Style="margin-top:10px">
+  <div class="card-header">
+    <h5 class="card-title" style="font-size: 25px;font-family: 'Ravi Prakash', cursive;">{{yaasaOfTheDay.title}}</h5>
+  </div>
+  <div class="card-body">
+
+    <div class="Meaning">
+      <p class="card-text"> <strong style="font-size: 20px;font-family: 'Ravi Prakash', cursive;">అర్థం: </strong>{{yaasaOfTheDay.meaning}}</p>
+    </div>
+    <hr class="my-12" />
+
+    <div class="ety">
+      <p class="card-text"><strong style="font-size: 20px;font-family: 'Ravi Prakash', cursive;">శబ్దవ్యుత్పత్తి శాస్త్రం: </strong>{{yaasaOfTheDay.ety}}</p>
+    </div>
+    <hr class="my-12" />
+
+    <div class="example">
+      <p class="card-text"><strong style="font-size: 20px;font-family: 'Ravi Prakash', cursive;">ఉదాహరన: </strong> {{yaasaOfTheDay.example}}</p>
+    </div>
+    <hr class="my-12" />
+
+    <div class="regions">
+      <p class="card-text" style="display: inline-block"><strong style="font-size: 20px;font-family: 'Ravi Prakash', cursive;">ప్రాంతీయ వాడుక: </strong></p>
+      {% for region in yaasaOfTheDay.regions -%}
+          <span class="badge rounded-pill {{darkTheme.bgthemeContrast}} {{darkTheme.fontContrast}}">{{region}}</span>
+      {% endfor %}
+
+    </div>
+
+    <div class="contributor" style="text-align:right;font-size: 20px;font-family: 'Ravi Prakash', cursive;">సహకారి: <a href="/user/sai_103986966762097156631">sai</a>, March 19</div>
+
+  </div>
+  <div class="card-footer text-muted">
+    <div class="contributor" style="text-align:right">Source: <a href="www.yaasalu.com">www.yaasalu.com</div>
+  </div>
+</div>
